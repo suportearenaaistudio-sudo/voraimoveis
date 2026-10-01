@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="VORA Living — imóveis com alma em Portugal. Casas, apartamentos e refúgios escolhidos para viver melhor."
+    />
+    <title>VORA Living — Imóveis com alma em Portugal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <p>Consultoria imobiliária com tempo para ouvir.</p>
+      <a href="contacto.html">Fale com a nossa equipa <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <header class="site-header" id="topo">
+      <a class="brand" href="#topo" aria-label="VORA Living, início">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">VORA<span>living</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#imoveis">Comprar</a>
+        <a href="#imoveis">Arrendar</a>
+        <a href="#lugares">Lugares</a>
+        <a href="sobre.html">A VORA</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="saved-link" type="button" aria-label="Abrir imóveis guardados">
+          <span class="heart-icon" aria-hidden="true">♡</span>
+          <span>Guardados</span>
+          <span class="saved-count">0</span>
+        </button>
+        <a class="header-contact" href="contacto.html">Vamos conversar <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content shell">
+          <div class="eyebrow eyebrow-light"><span></span> Portugal, com outro olhar</div>
+          <h1 id="hero-title">A sua próxima<br /><em>história</em> começa aqui.</h1>
+          <p class="hero-copy">Imóveis escolhidos com calma, em lugares que ficam consigo muito depois da visita.</p>
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>AM</span><span>SR</span><span>LC</span><span>+</span>
+            </div>
+            <p><strong>+1.200 famílias</strong><br />já encontraram o seu lugar.</p>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#imoveis"><span class="scroll-line"></span> explorar imóveis</a>
+      </section>
+
+      <section class="search-panel-wrap shell" aria-label="Pesquisar imóveis">
+        <div class="search-panel">
+          <div class="search-tabs" role="tablist" aria-label="Objetivo da pesquisa">
+            <button class="search-tab is-active" type="button" role="tab" aria-selected="true" data-mode="Comprar">Comprar</button>
+            <button class="search-tab" type="button" role="tab" aria-selected="false" data-mode="Arrendar">Arrendar</button>
+          </div>
+          <form class="search-form" id="search-form">
+            <label class="search-field search-field-location">
+              <span class="field-label">Onde?</span>
+              <span class="field-value"><span class="pin-icon" aria-hidden="true">⌖</span><input id="location-input" type="text" placeholder="Cidade, zona ou código postal" /></span>
+            </label>
+            <label class="search-field">
+              <span class="field-label">O quê?</span>
+              <select id="type-select">
+                <option value="all">Todos os imóveis</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="moradia">Moradia</option>
+                <option value="quinta">Quinta</option>
+              </select>
+            </label>
+            <label class="search-field search-field-price">
+              <span class="field-label">Orçamento</span>
+              <select id="price-select">
+                <option value="all">Qualquer valor</option>
+                <option value="under-600">Até 600.000 €</option>
+                <option value="600-1000">600.000 € — 1.000.000 €</option>
+                <option value="over-1000">Mais de 1.000.000 €</option>
+              </select>
+            </label>
+            <button class="search-button" type="submit"><span class="search-glass" aria-hidden="true"></span><span>Encontrar o meu lugar</span></button>
+          </form>
+          <div class="search-feedback"><p class="search-result-note" id="search-result-note" aria-live="polite"></p><button class="clear-search" id="clear-search" type="button" hidden>Limpar filtros</button></div>
+        </div>
+      </section>
+
+      <section class="intro-section shell" id="manifesto">
+        <div class="intro-kicker">
+          <span class="section-index">01</span>
+          <span class="eyebrow"><span></span> A nossa forma de estar</span>
+        </div>
+        <div class="intro-grid">
+          <h2>Mais do que metros quadrados, procuramos <em>sensações.</em></h2>
+          <div class="intro-text">
+            <p>Uma janela que apanha o sol da tarde. O silêncio de uma rua de bairro. A mesa onde cabem mais dois. É isto que torna uma casa, um lugar.</p>
+            <a class="text-link" href="sobre.html">Conheça a nossa abordagem <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><strong>12</strong><span>anos a cuidar<br />de escolhas</span></div>
+          <div class="stat"><strong>08</strong><span>regiões<br />que conhecemos</span></div>
+          <div class="stat"><strong>94%</strong><span>dos clientes<br />recomendam-nos</span></div>
+          <div class="stat stat-quote"><span class="quote-mark">“</span><p>O imobiliário pode ser humano, claro e até bonito.</p></div>
+        </div>
+      </section>
+
+      <section class="listings-section" id="imoveis">
+        <div class="shell">
+          <div class="section-heading-row">
+            <div>
+              <span class="eyebrow"><span></span> Escolhas VORA</span>
+              <h2>Casas que pedem<br /><em>para ser vividas.</em></h2>
+            </div>
+            <div class="heading-side">
+              <p>Uma seleção pequena, especial e em constante movimento — para quem não quer qualquer casa.</p>
+              <a class="text-link" href="#imoveis">Ver todos os imóveis <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <div class="listing-grid" id="listing-grid">
+            <article class="property-card property-card-featured" data-type="moradia" data-price="over-1000" data-location="comporta">
+              <div class="property-image image-comporta">
+                <div class="property-badge">Novo na VORA</div>
+                <button class="favorite-button" type="button" aria-label="Guardar Casa do Pinhal" aria-pressed="false">♡</button>
+                <div class="property-image-caption"><span>Casa do Pinhal</span><span>01 / 04</span></div>
+              </div>
+              <div class="property-info">
+                <div><span class="property-kind">Moradia · Comporta</span><h3>Casa do Pinhal</h3></div>
+                <span class="property-price">1.850.000 €</span>
+                <div class="property-details"><span>4 quartos</span><i></i><span>238 m²</span><i></i><span>Piscina</span></div><a class="property-open" href="imovel-casa-do-pinhal.html">Ver imóvel <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="property-card" data-type="apartamento" data-price="600-1000" data-location="lisboa">
+              <div class="property-image image-lisboa">
+                <button class="favorite-button" type="button" aria-label="Guardar Apartamento Santa Catarina" aria-pressed="false">♡</button>
+                <div class="property-image-caption"><span>Apartamento Santa Catarina</span><span>02 / 04</span></div>
+              </div>
+              <div class="property-info">
+                <div><span class="property-kind">Apartamento · Lisboa</span><h3>Santa Catarina</h3></div>
+                <span class="property-price">790.000 €</span>
+                <div class="property-details"><span>2 quartos</span><i></i><span>104 m²</span><i></i><span>Varanda</span></div><a class="property-open" href="imovel-santa-catarina.html">Ver imóvel <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="property-card" data-type="quinta" data-price="over-1000" data-location="douro">
+              <div class="property-image image-douro">
+                <button class="favorite-button" type="button" aria-label="Guardar Quinta da Lapa" aria-pressed="false">♡</button>
+                <div class="property-image-caption"><span>Quinta da Lapa</span><span>03 / 04</span></div>
+              </div>
+              <div class="property-info">
+                <div><span class="property-kind">Quinta · Douro</span><h3>Quinta da Lapa</h3></div>
+                <span class="property-price">1.290.000 €</span>
+                <div class="property-details"><span>5 quartos</span><i></i><span>412 m²</span><i></i><span>Vinha</span></div><a class="property-open" href="imovel-quinta-da-lapa.html">Ver imóvel <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="property-card" data-type="apartamento" data-price="under-600" data-location="cascais">
+              <div class="property-image image-cascais">
+                <button class="favorite-button" type="button" aria-label="Guardar Loft do Guincho" aria-pressed="false">♡</button>
+                <div class="property-image-caption"><span>Loft do Guincho</span><span>04 / 04</span></div>
+              </div>
+              <div class="property-info">
+                <div><span class="property-kind">Apartamento · Cascais</span><h3>Loft do Guincho</h3></div>
+                <span class="property-price">545.000 €</span>
+                <div class="property-details"><span>1 quarto</span><i></i><span>78 m²</span><i></i><span>Mar</span></div><a class="property-open" href="imovel-loft-do-guincho.html">Ver imóvel <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <div class="empty-state" id="empty-state" hidden>
+            <span class="empty-icon">⌂</span>
+            <h3>Ainda não encontrámos esse lugar.</h3>
+            <p>Experimente ajustar a pesquisa ou fale connosco — podemos procurar por si.</p>
+            <a class="text-link" href="contacto.html">Falar com a VORA <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="places-section shell" id="lugares">
+        <div class="places-heading">
+          <div><span class="eyebrow"><span></span> Mais do que uma morada</span><h2>Encontre o seu<br /><em>ritmo.</em></h2></div>
+          <p>De uma aldeia entre sobreiros ao bairro mais criativo de Lisboa, há um Portugal à sua medida.</p>
+        </div>
+        <div class="places-grid">
+          <a class="place-card place-card-large" href="#imoveis"><div class="place-bg bg-alentejo"></div><div class="place-content"><span>01 — Interior</span><h3>Alentejo</h3><small>Tempo para respirar</small></div><span class="place-arrow">↗</span></a>
+          <a class="place-card" href="#imoveis"><div class="place-bg bg-lisboa"></div><div class="place-content"><span>02 — Cidade</span><h3>Lisboa</h3><small>Energia para criar</small></div><span class="place-arrow">↗</span></a>
+          <a class="place-card" href="#imoveis"><div class="place-bg bg-costa"></div><div class="place-content"><span>03 — Atlântico</span><h3>Costa</h3><small>Mar para ficar</small></div><span class="place-arrow">↗</span></a>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <div class="testimonial-shape"></div>
+        <div class="shell testimonial-inner">
+          <span class="quote-mark quote-mark-large">“</span>
+          <blockquote id="testimonial-quote">Não nos mostraram apenas casas. Fizeram-nos perguntas até perceberem como queríamos viver.</blockquote>
+          <div class="testimonial-author"><span class="author-line"></span><p><strong id="testimonial-name">Inês &amp; Miguel</strong><br /><span id="testimonial-meta">Mudaram-se para a Comporta em 2023</span></p></div>
+          <div class="testimonial-control"><span id="testimonial-current">01</span><span class="control-line"></span><span id="testimonial-total">03</span><button id="testimonial-next" type="button" aria-label="Próximo testemunho">→</button></div>
+        </div>
+      </section>
+
+      <section class="contact-section shell" id="contacto">
+        <div class="contact-card">
+            <div class="contact-copy"><span class="eyebrow eyebrow-light"><span></span> O primeiro passo</span><h2>Vamos encontrar<br /><em>o seu lugar?</em></h2><p>Conte-nos o que procura. A nossa equipa responde em menos de 24 horas, com ideias — não com pressão.</p><a class="button button-light" href="contacto.html">Começar uma conversa <span aria-hidden="true">↗</span></a></div>
+          <div class="contact-visual"><div class="contact-sun"></div><div class="contact-silhouette"></div><span>© VORA living / 2024</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-top">
+        <div><a class="brand brand-footer" href="#topo"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">VORA<span>living</span></span></a><p>Imóveis com alma<br />em Portugal.</p></div>
+        <div class="footer-links"><div><span>Explorar</span><a href="#imoveis">Comprar casa</a><a href="#imoveis">Arrendar casa</a><a href="#lugares">Descobrir lugares</a></div><div><span>VORA</span><a href="sobre.html">A nossa história</a><a href="contacto.html">Vender connosco</a><a href="contacto.html">Contactos</a></div><div><span>Segue-nos</span><a href="#topo">Instagram ↗</a><a href="#topo">Pinterest ↗</a><a href="#topo">LinkedIn ↗</a></div></div>
+        <div class="newsletter"><span>Notas de Portugal</span><p>Uma carta ocasional sobre casas, lugares e a vida que acontece entre os dois.</p><form id="newsletter-form"><input type="email" aria-label="O seu email" placeholder="O seu email" required /><button type="submit" aria-label="Subscrever">↗</button></form><small id="newsletter-note" aria-live="polite"></small></div>
+      </div>
+      <div class="shell footer-bottom"><span>© 2024 VORA Living. Todos os direitos reservados.</span><span><a href="privacidade.html">Privacidade</a>&nbsp;&nbsp;&nbsp; Cookies&nbsp;&nbsp;&nbsp; Livro de reclamações</span><a href="#topo">Voltar ao topo ↑</a></div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
